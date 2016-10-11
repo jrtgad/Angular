@@ -6,7 +6,10 @@
 
 
 		// dejamos de devolver promesas
-		//this.gettingCategorias = $http.get('/api/pub/maestros');
+		/**
+		 * this.gettingCategorias = $http.get('/api/pub/maestros');
+		 */
+		
 
 		// y devolvemos recursos...
 		// que pueden ser consumidos con sintaxis síncrona

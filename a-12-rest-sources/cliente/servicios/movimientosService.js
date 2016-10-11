@@ -2,7 +2,7 @@
 	angular.module('servicios').service('movimientosService', movimientosService);
 
 
-	function movimientosService($resource)  {
+	function movimientosService($resource) {
 
 		/*
 		this.gettingMovimientos =   function ()  {
@@ -24,9 +24,12 @@
 		*/
 
 		// Estamos devolviendo recursos, que internamente usan promesas
-        this.movimientos = $resource("/api/priv/movimientos/:id", { id: '@id' }, { 'update': {method:'PUT'}});
-		this.total =  $resource("/api/priv/movimientos/totales/");
+		this.movimientos = $resource(
+			"/api/priv/movimientos/:id",
+			{ id: '@id' },
+			{ 'update': { method: 'PUT' } });
+		this.total = $resource("/api/priv/movimientos/totales/");
 
 	};
 
-}());
+} ());
