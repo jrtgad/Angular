@@ -1,4 +1,3 @@
-/** REVISAR */
 "use strict";
 
 

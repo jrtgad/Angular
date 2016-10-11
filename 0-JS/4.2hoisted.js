@@ -1,3 +1,8 @@
+/**
+ * Practicar para ver cómo se elevan las variables y funciones
+ * Ocurre duranta la compilación JIT
+ * Previa a la interpretación
+ */
 function funcionDeclaradaSuperElevada() {
     return "Me elevo... :-)";
 }
