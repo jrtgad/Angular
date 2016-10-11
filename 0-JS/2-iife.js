@@ -34,30 +34,3 @@ var miVariable = "modular";
 
 console.log(miVariable);
 
-/** Module pattern */
-
-var logger = (function () {
-    var deboUsarConsola = true;
-    var resultado = {
-        quieroUsarConsola: function(p){
-            deboUsarConsola = p;
-        }, //deboUsarConsola,
-        debug: funcionDebug,
-        error: function (excepcion) {
-            if (deboUsarConsola) {
-                console.error(excepcion);
-            }
-        }
-    };
-    function funcionDebug (mensaje) {
-        if (deboUsarConsola) {
-            console.debug(mensaje);
-        }
-    }
-
-    return resultado;
-}
-)();
-
-logger.quieroUsarConsola(false);
-logger.debug("hola");

@@ -16,5 +16,5 @@ else {
     console.log(mensaje);
 }
 
-// la variable mensaje se define en distinso ámbitos
+// la variable mensaje se define en distintos ámbitos
 console.log(mensaje);

@@ -6,46 +6,55 @@
 var miVariable = "modular";
 
 function miFuncion() {
-    console.log(miVariable); // no definida
-     miVariable = "privada de miFuncion";
+    console.log(miVariable); // modular
+    miVariable = "privada de miFuncion";
     console.log(miVariable);
 }
 
 function otraFuncion(miVariable) {
-    miVariable = "privada de otraFuncion vía parámetros";
-    otraVariable = "no es global, es local de otraFuncion!!!";
     console.log(miVariable);
+    miVariable = "privada de otraFuncion vía parámetros";
+    console.log(miVariable);
+    otraVariable = "no es global, es local de otraFuncion!!!";
     console.log(otraVariable);
 }
 
 function superFuncion() {
-    var miVariable = "privada de superFuncion";
-    var miVariable2 = "privada de superFuncion";
-
+    var miVariable = "miVariable privada de superFuncion";
+    var miVariable2 = "miVariable2 privada de superFuncion";
+    console.log(miVariable); // se usa la de nivel superior
     function intraFuncion() {
+        console.log(miVariable); // se redeclara pero aún está no definida
         console.log(miVariable2);
-        console.log(miVariable); // no definida
-        var miVariable = "privada de miFuncion";
+        var miVariable = "miVariable privada de intraFuncion";
         console.log(miVariable);
     }
     intraFuncion();
 }
 
-var miFuncionExpresion = function nombreInterno() {
+var misFunciones = function nombreInterno() {
     console.log(miVariable); // no definida
     var miVariable = "privada de miFuncionExpresion";
     console.log(miVariable);
-    //nombreInterno() ; // es un correcto bucle infinito
-    // util para recursividad
+    //nombreInterno() ; // ATENCIÓN es un correcto bucle infinito
+    // podría ser util para recursividad
     
+    var unaExpresionInterna = function unaFuncionExpresionInterna(){
+        console.log("Una función expresión interna");
+    };
+
     return {
-        lafuncionaexponer : expresionInterna
+        unaFuncionExpresionExpuesta: unaExpresionInterna,
+        unaFuncionSetenciaExpuesta: funcionSentenciaInterna
     };
-    var expresionInterna = function otraInterna(){
-        console.log("Otra interna");
-    };
+    function funcionSentenciaInterna() {
+        console.log("Una función sentencia interna");
+    }
+    
 };
-miFuncionExpresion().lafuncionaexponer();
+misFunciones().funcionSentenciaInterna();
+misFunciones().unaFuncionExpuesta();
+misFunciones().unaFuncionExpresionExpuesta();
 miFuncion();
 console.log(miVariable);
 //console.log(otraVariable);// Variable aún no declarada
@@ -54,5 +63,5 @@ console.log(otraVariable);
 
 miFuncion();
 otraFuncion(miVariable);
-miFuncionExpresion();
+misFunciones();
 //nombreInterno();// No Conocida

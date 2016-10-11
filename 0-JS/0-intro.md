@@ -170,7 +170,6 @@ var miPadre = new Personaje("Anakin", "Skywalker", 50);
 
 var nombre = miPadre.nombre;
 var apellido = miPadre["apellido"];
-var edad = miPadre[2];
 
 Object.keys(miPadre);
 Object.keys(miPadre)[2]:

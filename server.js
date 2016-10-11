@@ -58,6 +58,6 @@ function notFound(res) {
 	res.writeHead(404, {
 		'Content-Type': 'text/html'
 	});
-	res.write('404 - Ho he encontrado nada por aquí :-(');
+	res.write('404 - No he encontrado nada por aquí :-(');
 	res.end();
 }
