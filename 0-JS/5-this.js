@@ -1,73 +1,56 @@
 /** REVISAR */
-//"use strict";
-// this =  contexto de ejecución de una función
+"use strict";
 
 
+/**
+ * this =  contexto de ejecución de una función
+ */
 function miFuncion() {
     console.log(this.variable);
 }
 
-var variable = "módulo";
+var variable = "variable en el módulo, accesible desde this";
 
 miFuncion();
 
-var complejo = { variable: "propiedad", funcion: miFuncion };
+
+/**
+ * this =  el objeto en el que se defina
+ */
+var complejo = { variable: "this apunta a su objeto padre, y tomo la varible como una propiedad", funcion: miFuncion };
 complejo.funcion();
 
-this.function name(params) {
-    
-}
 
-function superfuncion(){
-    var privada = "1";
-    this.publica ="2";
+/**
+ * patrón self
+ */
+
+function superFuncion() {
+    this.propiedad = "propiedad accesible desde el exterior";
+    
+    this.metodo = function () {
+        console.log("método llamable desde el exterior");
+    };
+
+    function interno() {
+        console.log("método invisible desde el exterior");
+    }
+
+    this.metodoSorpresa = function () {
+        // probar en chrome (ES6) y Explorer8(ES5)
+        console.log(this.propiedad);
+    };
+    
     var self = this;
-    var otracosa= function(par1){
-        console.log(privada);
-        console.log(par1);
-    }
-    this.funcion = function(){
-        console.log(privada);
-        console.log(self.publica);
-    }
-    function otra(){
-        console.log(privada);   
-    }
+    this.metodoPatron = function () {
+        console.log(self.propiedad);
+    };
     return this;
 }
 
-superfuncion().publica
-// probar en chorme!!!
-// probar con new 
-
-// 1- new ?
-// 2- call-apply
-// 3- within an object
-// 4- global || undefined en strict mode
-
-/** CLOSURES */
-
-
-for (var i = 1; i <= 5; i++){
-    console.log("PRESENT OUT i" + i);
-    function pepe () {
-        console.log("FUTURE IN i" + i);
-    }
-    setTimeout(function () {
-        console.log("FUTURE IN i" + i);
-    }, 1000 * i);
-}
-for (var i = 1; i <= 5; i++){
-    console.log("PRESENT OUT i" + i);
-    (function (j) {
-        setTimeout(function () {
-            console.log("FUTURE IN i" + j);
-        }, 1000* j);
-    })(i);    
-}
-for (let i = 1; i <= 5; i++){
-    console.log("PRESENT OUT i" + i);
-    setTimeout(function () {
-        console.log("FUTURE IN i" + i);
-    }, 1000*i);
-}
+var miSuperFuncion = new superFuncion();
+console.log(miSuperFuncion.propiedad);
+miSuperFuncion.metodo();
+miSuperFuncion.interno();
+miSuperFuncion.metodoSorpresa();
+miSuperFuncion.metodoPatron();
