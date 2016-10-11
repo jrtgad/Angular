@@ -29,7 +29,6 @@
 
 		/** actualiza los datos para repintar la vista */
 		function actualizarEstrellas() {
-            console.log(vm.valor)
 			if (!vm.valor) vm.valor = 1;
 			vm.estrellas = [];
 			for (var i = 0; i < vm.max; i++) {
@@ -42,4 +41,4 @@
 	}
 
 
-}());
+} ());

@@ -1,8 +1,10 @@
 (function () {
-    var menuCtrl = function ($location) {
+    angular.module('cashFlow').controller('MenuCtrl',menuCtrl);
+    
+    function menuCtrl($location) {
         this.isActive = function (ruta) {
             return ruta === $location.path();
         }
     }
-    angular.module('cashFlow').controller('MenuCtrl',menuCtrl);
+    
 }());

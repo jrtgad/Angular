@@ -23,7 +23,6 @@
 		this.postMovimiento =   function (movimiento)  {
 			movimiento.tipo = tipo(movimiento);
 			movimientos.push(movimiento);
-			console.log(movimiento);
 			total.ingresos += movimiento.esIngreso * movimiento.importe;
 			total.gastos += movimiento.esGasto * movimiento.importe;
 		};

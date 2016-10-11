@@ -11,7 +11,7 @@
 				autor: 'autor',
 				empresa: '?empresa'
 			},
-            scope:{year:"@"},
+			scope: { year: "@" },
 			template: '<footer class="container"><hr/><p class="text-center">Desarrollado con AngularJS by Google. Por <span ng-transclude="autor"></span> - {{year}} - <span ng-transclude="empresa"></span></p></footer>'
 		};
 	};
@@ -27,4 +27,4 @@
 	};
 
 
-}())
+} ())

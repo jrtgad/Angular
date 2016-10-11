@@ -13,7 +13,7 @@
 			templateUrl: './tpl-menu-navegacion.html',
 			controller: 'MenuCtrl as menu'
 		})
-        .component('abContador', {
+		.component('abContador', {
 			// parámetros por valor
 			// parámetros por referencia
 			templateUrl: './tpl-contador.html',
@@ -22,7 +22,7 @@
 				valor: '='
 			}
 			// hay otros tipos avanzados
-			// > one-way down
+			// < one-way down
 			// & event up
 		})
 		.component('abFilaMovimiento', {
@@ -40,19 +40,19 @@
 				scope: {
 					movimiento: '='
 				},
-                controller: function () { },
-                link: function (scope, element) {
+				controller: function () { },
+				link: function (scope, element) {
 
-                }
+				}
 			}
 		})
 		.directive('abPluginDOM', function () {
 			// Se usa para manipulaciones del DOM
 			// Por ejemplo integración de plugins no portados para AngularJS
 			return {
-                link: function (scope, element) {
+				link: function (scope, element) {
 					// enlace entre el DOM y el modelo
-                }
+				}
 			}
 		})
 } ());

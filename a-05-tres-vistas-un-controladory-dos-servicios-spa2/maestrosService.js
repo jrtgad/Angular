@@ -5,10 +5,10 @@
 
 	function maestrosService() {
 
-		var privado = "";
+		var privado = "esto sólo se ve dentro de la función actual";
 
 		var srv = this;
-		this.categorias = {
+		srv.categorias = {
 			categoriasIngresos: ['Nómina', 'Ventas', 'Intereses Depósitos'],
 			categoriasGastos: ['Hipotéca', 'Compras', 'Impuestos']
 		};

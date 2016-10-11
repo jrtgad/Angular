@@ -1,12 +1,10 @@
 (function () {
-	// debería desglosarse en ficheros por filtro
 	angular.module('abFiltros', [])
 		.filter('abLimpiarNumero', limpiarNumero)
 		.filter('abLimpiarCadena', limpiarCadena)
 		.filter('abRecortar', recortar)
 		.filter('abRellenarVacios', rellenarVacios)
 		.filter('abGranImporte', granImporte);
-	
 	function limpiarNumero() {
 		var funcionFiltro = function (cadena) {
 			if (cadena) {
@@ -20,7 +18,6 @@
 		};
 		return funcionFiltro;
 	}
-
 	function limpiarCadena() {
 		var funcionFiltro = function (cadena) {
 			if (cadena) {
@@ -31,7 +28,6 @@
 		};
 		return funcionFiltro;
 	}
-
 	function recortar() {
 		var funcionFiltro = function (cadena, largo, quitarInicio) {
 			if (!cadena) {
