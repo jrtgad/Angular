@@ -1,6 +1,6 @@
 (
     // es un sentencia
-    //console.log('como expresión el iiffe falla')
+    //console.log('como expresión el iife falla')
     function funcionInterna() {
         var nombre = "Luis";
         console.log("funcionInterna autoinvocada: " + nombre);
