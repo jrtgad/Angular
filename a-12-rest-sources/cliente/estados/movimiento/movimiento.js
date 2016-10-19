@@ -16,13 +16,15 @@
 				/** Recuperación de parámetros */
                 var movimientoId = $stateParams.id;
 				
-				/** Envío del parámetro en la consult< */
-				// recogedor de un resurso con super poderes
-                
-				vm.movimiento = movimientosService.movimientos.get({ id: movimientoId });
+				/** Envío del parámetro en la consulta */
+				// se recibe un resurso con super poderes
+                vm.movimiento = movimientosService.movimientos.get({ id: movimientoId });
 				
                 vm.maestros = maestrosService.get();
                 
+				/**
+				 * La actualización el resurso se hace vía el método custom $update
+				 */
 				vm.guardarMovimiento = function () {
                     vm.movimiento.fecha = new Date(vm.movimiento.fecha);
                     // Llamamos al método uptade
