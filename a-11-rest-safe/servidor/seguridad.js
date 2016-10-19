@@ -23,7 +23,6 @@ function usarSeguridad(app, ruta) {
 				next();
 			} else {
 				console.log('Sesión caducada:' + JSON.stringify(sesion));
-				// Sintaxis mejorada de envío de códigos de estado http
 				res.status(419).send('Sesión caducada');
 			}
 		} else {

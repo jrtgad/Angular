@@ -4,6 +4,7 @@
 		.config(function ($stateProvider) {
 			$stateProvider
 				.state('movimiento', {
+					/** declaración de ruta parametrizada */
 					url: '/movimiento/:id', // parámetro id de movimiento
 					template: '<ab-movimiento></ab-movimiento>'
 				})
@@ -12,12 +13,14 @@
 			templateUrl: './estados/movimiento/movimiento.html',
 			controller: function (movimientosService, maestrosService, $state, $stateParams) {
 				var vm = this;
+				/** Recuperación de parámetros */
+                var movimientoId = $stateParams.id;
 				
-                var id = $stateParams.id;
+				/** Envío del parámetro en la consult< */
 				// recogedor de un resurso con super poderes
-                vm.movimiento = movimientosService.movimientos.get({id:id});
+                
+				vm.movimiento = movimientosService.movimientos.get({ id: movimientoId });
 				
-
                 vm.maestros = maestrosService.get();
                 
 				vm.guardarMovimiento = function () {
@@ -43,9 +46,6 @@
 							vm.movimiento.importe = -9999;
 						});
 				};
-
-
 			}
 		})
-
 }());

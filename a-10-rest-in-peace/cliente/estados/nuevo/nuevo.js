@@ -26,7 +26,7 @@
 						vm.maestros = result.data;
 					});
 
-				// la función que invoca el usuario es también asíncrona
+				// la función para guardar que invoca el usuario es también asíncrona
 				vm.guardarMovimiento = function () {
 					var auxCopyMov = angular.copy(vm.nuevoMovimiento);
 					movimientosService.postingMovimiento(auxCopyMov)
