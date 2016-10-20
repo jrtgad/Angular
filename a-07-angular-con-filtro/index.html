@@ -37,10 +37,10 @@
 		</div>
 
 		<!-- Pruebas con Filtros -->
-		<span ng-init="numero=0; otroNumero=42; vacio= ""; texto='hola-Mundo@angular.js'; movimientos=[{importe:1001}, {importe:999}] "></span>
-		<h3>{{ numero | abLimpiarNumero}}</h3>
-		<h3>{{ otroNumero | abLimpiarNumero}}</h3>
-		<h3>{{ vacio | abRellenarVacios}}</h3>
+		<span ng-init="numero=0; otroNumero=42; vacio=''; texto='hola-Mundo@angular.js'; movimientos=[{importe:1001}, {importe:999}] "></span>
+		<h3>{{ numero | abLimpiarNumero }}</h3>
+		<h3>{{ otroNumero | abLimpiarNumero }}</h3>
+		<h3>{{ vacio | abRellenarVacios }}</h3>
 		<h3>{{ texto | uppercase | abLimpiarCadena | abRecortar:4 }}</h3>
 		<h3>{{ texto | lowercase | abRecortar:4:true }}</h3>
 		<h3>{{ movimientos | abGranImporte }}</h3>
