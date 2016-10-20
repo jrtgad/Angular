@@ -16,12 +16,12 @@
         .component('abContador', {
             templateUrl: './tpl-contador.html',
             bindings: {
-                texto: '@', // parámetros por valor
-                valor: '=' // parámetros por referencia
+                texto: '@', // parámetros por valor --> Valor directo, no cambia
+                valor: '=' // parámetros por referencia --> Pasar referencia, cambia siempre
             }
             // hay otros tipos avanzados
-            // < one-way down
-            // & event up
+            // < one-way down --> Pasa referencia, el padre notifica al hijo, pero el hijo no puede cambiarla
+            // & event up --> Pasa referencia, el hijo notifica al padre, pero el padre no puede cambiarla
         })
         .component('abFilaMovimiento', {
             templateUrl: './tpl-fila-movimiento.html',
