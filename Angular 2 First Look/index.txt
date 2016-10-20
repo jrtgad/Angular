@@ -1,0 +1,112 @@
+
+
+Course Overview
+??1m 20s?
+Course Overview??1m 20s
+
+
+?
+Angular 2 in Action
+?5m 21s?
+Angular??3m 4s
+What Can We Build??50s
+Running the Samples?1m 26s
+
+
+?
+Angular 2 Architecture, What's New and What's Different
+?28m 54s?
+Angular 2: What's New and What's Different?47s
+Language Choices?1m 59s
+Angular 1's Impact?46s
+Controller to Components?57s
+First Look at Components?2m 38s
+Bootstrapping Angular?50s
+Structural Directives?1m 29s
+First Look at Structural Directives?1m 1s
+Data Binding?3m 20s
+First Look at Data Binding?1m 21s
+Fewer Built-in Directives?1m 3s
+First Look at HTML Element Property and Event Binding?1m 3s
+Services and Dependency Injection?2m 37s
+First Look at Services and Dependency Injection?1m 44s
+Your Skills Translate?1m 7s
+Putting it All in Context of an App?4m 12s
+Angular 2 Resources?1m 53s
+
+
+?
+Angular 2 Essentials: Modules, Components, Templates, and Metadata
+?29m 34s?
+Angular 2 Essentials?57s
+Modules?2m 4s
+Components?3m 46s
+Defining a Component?3m 10s
+Templates?2m 56s
+Nesting Components?3m 47s
+Metadata?2m 50s
+Examining the Parts of a Component?1m 47s
+Component Communication with Input and Output?3m 44s
+Parent to Child Communication with ViewChild?3m 28s
+Summary?1m 0s
+
+
+?
+Displaying Data: Data Binding, Directives, and Pipes
+?35m 58s?
+Displaying Data?34s
+Data Binding?3m 5s
+Interpolation?3m 13s
+Property Binding?3m 18s
+Adding Property Binding?4m 30s
+Event Binding?2m 27s
+Adding Event Binding?3m 12s
+Two Way Binding?3m 3s
+Built-in Directives?4m 8s
+Adding Attribute and Structural Directives?2m 52s
+Pipes?2m 3s
+Exploring Template Syntax in Storyline Tracker?2m 44s
+Summary?43s
+
+
+?
+Services, Dependency Injection, and Component Lifecycle Hooks
+?24m 25s?
+Services, DI and Lifecycle Hooks?1m 17s
+Services?1m 24s
+Refactoring for Services?5m 16s
+Dependency Injection?3m 38s
+Registering Services with the Angular Injector?2m 10s
+Component Lifecycle Hooks?3m 10s
+Inspecting Lifecycle Hooks?2m 35s
+Services, DI and Hooks in Storyline Tracker?3m 58s
+Summary?54s
+
+
+?
+Data with Http
+?21m 9s?
+Getting Data with Http?56s
+Http?2m 44s
+Using Http in Angular 2?3m 21s
+Adding Exception Handling for Http?3m 16s
+RxJs?2m 31s
+Async Pipe?1m 11s
+Adding an Async Pipe with an Observable?1m 21s
+Promises with Http?1m 40s
+Http in the Storyline Tracker?3m 9s
+Putting it All Together?56s
+
+
+?
+Routing
+?22m 0s?
+Routing?52s
+Routing Essentials?3m 51s
+Adding Routing to an App?2m 17s
+Adding Routing and Navigation Links?5m 14s
+Child Routers?3m 34s
+Examining Child Routers?2m 20s
+Routing in the Storyline Tracker?2m 37s
+Summary?1m 12s
+

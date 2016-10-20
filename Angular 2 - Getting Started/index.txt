@@ -1,0 +1,145 @@
+
+
+Course Overview
+?1m 25s?
+Course Overview?1m 25s
+
+
+?
+Introduction
+?11m 33s?
+Introduction?3m 25s
+Anatomy of an Angular 2 Application ?1m 6s
+Get the Most from This Course?2m 18s
+Sample Application?3m 3s
+Course Outline?1m 39s
+
+
+?
+First Things First
+?22m 22s?
+Introduction?58s
+Selecting a Language?4m 45s
+Selecting an Editor?1m 6s
+Setting up Our Environment?1m 33s
+Setting up an Angular 2 Application?5m 12s
+Running an Angular 2 Application?3m 0s
+About Modules?2m 22s
+Loading Modules and Hosting our Application?2m 4s
+Summary?1m 19s
+
+
+?
+Introduction to Components
+?24m 15s?
+Introduction?1m 30s
+What Is a Component??1m 59s
+Creating the Component Class?2m 22s
+Defining the Metadata with a Decorator?2m 39s
+Importing What We Need?2m 3s
+Demo: Creating the App Component?3m 35s
+Bootstrapping the App Component?3m 23s
+Demo: Bootstrapping the App Component?2m 57s
+Checklists and Summary?3m 43s
+
+
+?
+Templates, Interpolation, and Directives
+?29m 40s?
+Introduction?2m 16s
+Building a Template?4m 40s
+Building the Component?2m 13s
+Using a Component as a Directive?3m 45s
+Binding with Interpolation?4m 12s
+Adding Logic with Directives: ngIf?4m 23s
+Adding Logic with Directives: ngFor?4m 54s
+Checklists and Summary?3m 14s
+
+
+?
+Data Binding & Pipes
+?19m 17s?
+Introduction?1m 49s
+Property Binding?3m 46s
+Handling Events with Event Binding?4m 34s
+Handling Input with Two-way Binding?2m 36s
+Transforming Data with Pipes?4m 3s
+Checklists and Summary?2m 27s
+
+
+?
+More on Components
+?27m 29s?
+Introduction?2m 32s
+Defining Interfaces?6m 22s
+Encapsulating Component Styles?3m 31s
+Using Lifecycle Hooks?4m 20s
+Building Custom Pipes?7m 20s
+Checklists and Summary?3m 23s
+
+
+?
+Building Nested Components
+?23m 22s?
+Introduction?2m 10s
+Building a Nested Component?5m 19s
+Using a Nested Component?2m 58s
+Passing Data to a Nested Component Using @Input?3m 10s
+Passing Data from a Component Using @Output?7m 5s
+Checklists and Summary?2m 38s
+
+
+?
+Services and Dependency Injection
+?17m 40s?
+Introduction?1m 49s
+How Does It Work??2m 32s
+Building a Service?3m 18s
+Registering the Service?2m 41s
+Injecting the Service?4m 58s
+Checklists and Summary?2m 20s
+
+
+?
+Retrieving Data Using Http
+?18m 49s?
+Introduction?1m 25s
+Observables and Reactive Extensions?2m 54s
+Setting Up?2m 24s
+Sending an Http Request?6m 53s
+Subscribing to an Observable?2m 46s
+Checklists and Summary?2m 25s
+
+
+?
+Navigation and Routing
+?32m 39s?
+Introduction?2m 44s
+Setting Up?3m 32s
+Configuring Routes?3m 56s
+Tying Routes to Actions?5m 25s
+Placing the Views?2m 19s
+Passing Parameters to a Route?6m 17s
+Activating a Route with Code?3m 6s
+Checklists and Summary?5m 16s
+
+
+?
+Angular 2 Setup Revisited
+?10m 21s?
+Introduction?59s
+TypeScript Configuration File (tsconfig.json)?3m 10s
+npm Package File (package.json) and TypeScript Definitions File (typings.json)?4m 26s
+index.html File Libraries?1m 1s
+Summary?43s
+
+
+?
+Final Words
+?4m 56s?
+Introduction?34s
+Recapping Our Journey?1m 51s
+Learning More?48s
+What Is Angular? (Revisited)?1m 6s
+Closing
+
