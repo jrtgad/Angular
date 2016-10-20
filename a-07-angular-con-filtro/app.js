@@ -1,5 +1,5 @@
 // Es necesario incluir la referencia al módulo de filtros, ahora depende de ambos modulos
-angular.module('cashFlow', ['ui.router', 'abFiltros']);
+angular.module('cashFlow', ['ui.router', 'abFiltros', 'abFiltros2']);
 
 
 angular.module('cashFlow').config(function ($stateProvider) {

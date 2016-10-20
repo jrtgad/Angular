@@ -42,7 +42,7 @@
     <h3>{{ otroNumero | abLimpiarNumero}}</h3>
     <h3>{{ vacio | abRellenarVacios}}</h3>
     <h3>{{ texto | uppercase | abLimpiarCadena | abRecortar:4 }}</h3>
-    <h3>{{ texto | lowercase | abRecortar:4:true }}</h3>
+    <h3>{{ texto | lowercase | abRecortar:9:true }}</h3>
     <h3>{{ movimientos | abGranImporte }}</h3>
 
     <!-- JavaScript References -->
@@ -55,6 +55,7 @@
     <script src="movimientosService.js"></script>
     <!-- Fichero de filtros. Atención declara su propio módulo -->
     <script src="filtros.js"></script>
+    <script src="filtros2.js"></script>
 </body>
 
 </html>
