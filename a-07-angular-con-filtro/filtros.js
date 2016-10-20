@@ -33,7 +33,7 @@
 		return funcionFiltro;
 	}
 
-	// Esta función le quita acentos, guiones bajos, y caracteres raros
+	// Esta función le quita acentos, guiones medios, y otros caracteres raros
 	// Los sustituye por guiones bajos
 	function limpiarCadena() {
 		var funcionFiltro = function (cadena) {
@@ -47,7 +47,7 @@
 	}
 
 	// Devuelve un trozo de texto y tres puntos suspensivos... para indicar que hay más...
-	// Demuestra que un filtro puede tener parámetros, y cómo tratar valores por defecto.
+	// Demuestra que un filtro puede tener parámetros y cómo tratar valores por defecto.
 	function recortar() {
 		var funcionFiltro = function (cadena, largo, quitarInicio) {
 			if (!cadena) {
@@ -83,7 +83,7 @@
 		return funcionFiltro;
 	}
 
-	// Permite tener filtros predeterminadois en un array
+	// Permite tener filtros predeterminados en un array
 	function granImporte() {
 		var funcionFiltro = function (movimientos, valorCorte) {
 			var corte = valorCorte || 1000;
@@ -94,6 +94,8 @@
 					filtrados.push(mov);
 				}
 			}
+			/** Versión ES6*/
+			//filtrados = movimientos.filter(m => m.importe >= corte);
 			return filtrados;
 		};
 		return funcionFiltro;

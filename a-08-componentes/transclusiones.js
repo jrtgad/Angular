@@ -8,10 +8,10 @@
 	function firma() {
 		return {
 			transclude: {
-				autor: 'autor',
-				empresa: '?empresa'
+				autor: 'autor', // obligatorio
+				empresa: '?empresa' // opcional
 			},
-			scope: { year: "@" },
+			scope: { year: "@" }, // es un parámetro de entrada
 			template: '<footer class="container"><hr/><p class="text-center">Desarrollado con AngularJS by Google. Por <span ng-transclude="autor"></span> - {{year}} - <span ng-transclude="empresa"></span></p></footer>'
 		};
 	};

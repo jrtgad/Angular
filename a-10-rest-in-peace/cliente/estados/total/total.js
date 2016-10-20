@@ -12,6 +12,7 @@
 			templateUrl: './estados/total/total.html',
 			controller: function (movimientosService) {
 				var vm = this;
+				// Obtención del objeto con los datos totales
 				movimientosService.gettingTotal()
 					.then(function (result) {
 						vm.total = result.data;

@@ -10,7 +10,6 @@ var movimientos = require('./movimientos.js');
 
 var app = express();
 
-// Permite recuperar como objetos JavaScript el contenido emitido por el cliente
 app.use(bodyParser.urlencoded({
 	extended: true
 }));

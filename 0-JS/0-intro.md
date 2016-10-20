@@ -113,7 +113,7 @@ servicio.funcionLenta(function(err, res) {
 ### Promesas: Posible resultado de una ejcución
 
 ```JavaScript
-servicio.funcionLenta.save()  
+servicio.funcionLenta()  
   .then(function(res) {
     console.log(res);
   })

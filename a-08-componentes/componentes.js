@@ -14,12 +14,10 @@
 			controller: 'MenuCtrl as menu'
 		})
 		.component('abContador', {
-			// parámetros por valor
-			// parámetros por referencia
 			templateUrl: './tpl-contador.html',
 			bindings: {
-				texto: '@',
-				valor: '='
+				texto: '@',// parámetros por valor
+				valor: '=' // parámetros por referencia
 			}
 			// hay otros tipos avanzados
 			// < one-way down

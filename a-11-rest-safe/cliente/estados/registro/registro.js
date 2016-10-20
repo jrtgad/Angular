@@ -21,6 +21,7 @@
 		var vm = this;
 		vm.usuario = {};
 		vm.registrar = function () {
+			// Alta de un usuario => post a recurso usuarios
 			$http.post(urlBase + 'usuarios/', vm.usuario)
 				.then(function (respuesta) {
 					$rootScope.usuario = vm.usuario.email;
@@ -31,6 +32,7 @@
 					$rootScope.mensaje = respuesta.data;
 				});
 		}
+		// Alta de una sesión => post a recurso sesiones
 		vm.entrar = function () {
 			$http.post(urlBase + 'sesiones/', vm.usuario)
 				.then(function (respuesta) {

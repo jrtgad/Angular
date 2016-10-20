@@ -3,6 +3,18 @@
 // aunque no produce binarios 
 // pero si valida el código
 
+var sumar;
+
+sumar(3, 4);
+
+sumar = function (a, b) {
+    return a + b;
+};
+
+
+sumar(3, 4);
+
+
 var miVariable = "modular";
 
 function miFuncion() {
