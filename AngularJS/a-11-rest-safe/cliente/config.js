@@ -54,3 +54,10 @@
         return interceptor;
     }
 }());
+
+/*
+
+	A la hora de minificar, y para no pisar argumentos propios del framework,
+	se puede llamar a una funcion --> ['arg1', 'arg2' ....... , function]
+
+*/
